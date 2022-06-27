@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Charis+SIL&family=Joan&family=Ubuntu:wght@300;400&display=swap');
+*{
+    font-family: 'Anek Malayalam', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+body{
+    color: white;
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+section{
+    padding: 4.5rem 0 3rem ;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+.logo img{
+    width: 44px;
+    padding: 0 8px;
+    margin-right: 0.1rem;
+
+}
+.logo .bx{
+    font-size: 24px;
+    color: #2288ff;
+}
+.navbar{
+    display: flex;
+    font-weight: bold;
+    
+}
+.navbar a{
+    padding: 8px 17px;
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+.navbar a:hover{
+    color: green;
+}
+#menuIcons{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+#menu{
+    display: none;
+}
+.btn{
+    padding: 8px 22px;
+    background: green;
+    color:#fff;
+    border-radius: 5rem;
+    cursor: pointer;
+    text-align: center;
+}
+.btn:hover{
+    background: #3492fd;
+}
+.home{
+    margin-top: 5rem;
+    background: url(images/property-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.home-text{
+    padding: 35px;
+}
+.home-text h1{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
+    gap: 2rem;
+}
+.about-img img{
+    border-radius: 3rem 0 3rem 3rem;
+}
+.about-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: green;
+}
+.about-text h2{
+    font-size: 1.7rem;
+    color: #314862;
+}
+.about-text p{
+    font-size: 0.9rem;
+    margin: 1rem 0 1rem;
+    color: #314862;
+}
+
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-weight: 500;
+    color: green;
+}
+.heading h2{
+    font-size: 1.7rem;
+    color: #314862;
+}
+.heading p{
+    font-size: 0.9rem;
+    color: #314862;
+}
+.properties{
+    margin-top: 0rem;
+    background: white;
+    border-radius: 2rem;
+}
+.propContainer{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 3rem;
+    padding: 0 50px;
+    color: #314862;
+}
+.propContainer-imgs img{
+    border-radius: 3rem 0 3rem 3rem;
+}
+.propContainer .box{
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem black;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 1px solid rgb(232, 228, 228);
+}
+.propContainer .box:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.propContainer .box img{
+    border-radius: 1rem;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+.propContainer .box h3{
+    font-size: 1rem;
+    font-weight: 600;
+    float: right;
+}
+.propContainer .box .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.propContainer .box .content .text h3{
+    font-weight: 500;
+}
+.propContainer .box .content .text p{
+    font-size: 0.8rem;
+}
+.propContainer .box .content .icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.detail{
+    min-height: 100vh;
+    background:url(images/detail.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail form{
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem black;
+    width: 70rem;
+    padding: 2rem;
+}
+
+.detail form h3{
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+}
+
+.detail form .buttons-container{
+    display: flex;
+    gap: 1.5rem;
+}
+.detail form .buttons-container .btn{
+    flex:1;
+    text-align: center;
+}
+.detail form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.detail form .inputBox input,
+.detail form .inputBox select{
+    flex: 1 1 25rem;
+    border: .1rem solid #333;
+    box-shadow: 0 0.3rem 0.3rem black;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: none;
+}
+.detail form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+.newsletter{
+    display: flex;
+    color: #314862;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+.newsletter form{
+    background: #fff;
+    box-shadow: 0 0.3rem 0.3rem black;
+    padding: 6px 10px;
+    border-radius: 5rem;
+}
+.newsletter form input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.newsletter #email{
+    width: 280px;
+}
+.newsletter .btn{
+    padding: 12px 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.agent {
+    color: #314862;
+    text-align: center;
+}
+.agent .agent-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    object-position: center;
+}
+.agent .agent-container .box1{
+    background: #fff;
+    text-align: center;
+    border: 1rem rgb(31, 26, 26);
+    box-shadow: 0 0.3rem 0.3rem black;
+    border-radius: .5rem;
+    padding: 2rem;
+    position: relative;
+    width: 20rem;
+    height: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.agent .agent-container .box1 img{
+    border-radius: 50%;
+    box-shadow: 0 0.3rem 0.3rem black;
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem 0;
+    object-position: center;
+}
+.agent-container .box1 img{
+    border-radius: 1rem;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+.agents .agent-container .box1 h3{
+    font-style: 2rem;
+    color: #333;
+}
+.agents .agent-container .box1 span{
+    font-size: 1.7rem;
+    color: green;
+}
+.agents .agent-container .box1 .share a{
+    margin: 0 .3rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    background: #fff;
+}
+.end{
+    display: flex;
+    color: green;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+}
